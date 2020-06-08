@@ -1,7 +1,6 @@
 package main
 
 import "fmt"
-import "../utils"
 
 var lst1 = []int{1, 9, 3, 2, 6, 5, 8, 7, 4}
 
@@ -17,7 +16,7 @@ func main() {
 		}
 
 		if minV != lst1[i] {
-			lst1[minI], lst1[i] = utils.Swap(lst1[minI], lst1[i])
+			lst1[minI], lst1[i] = lst1[i], lst1[minI]
 		}
 	}
 	fmt.Println(lst1)
